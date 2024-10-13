@@ -1,0 +1,79 @@
+/* From Uiverse.io by satyamchaudharydev */ 
+.loading {
+    --speed-of-animation: 1.5s;
+    --gap: 5px;
+    --first-color: #7DC9E7;
+    --second-color: #132D46;
+    --third-color: #01C38E;
+    --fourth-color: #f6bb02;
+    --fifth-color: #18bafa;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.loading span {
+    width: 5px;
+    height: 100px;
+    margin: 0 var(--gap);
+    background: var(--first-color);
+    animation: scale var(--speed-of-animation) ease-in-out infinite;
+}
+
+.loading span:nth-child(2) {
+    background: var(--second-color);
+    animation-delay: -0.9s;
+}
+
+.loading span:nth-child(3) {
+    background: var(--third-color);
+    animation-delay: -0.8s;
+}
+
+.loading span:nth-child(4) {
+    background: var(--fourth-color);
+    animation-delay: -0.7s;
+}
+
+.loading span:nth-child(5) {
+    background: var(--fifth-color);
+    animation-delay: -0.6s;
+}
+
+.loading span:nth-child(6) {
+    background: var(--second-color);
+    animation-delay: -0.5s;
+}
+
+.loading span:nth-child(7) {
+    background: var(--third-color);
+    animation-delay: -0.4s;
+}
+
+.loading span:nth-child(8) {
+    background: var(--fourth-color);
+    animation-delay: -0.3s;
+}
+
+.loading.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+@keyframes scale {
+0%, 40%, 100% {
+    transform: scaleY(0.05);
+}
+
+20% {
+    transform: scaleY(1);
+}
+}
