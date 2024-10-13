@@ -1,7 +1,7 @@
 function animateLoadingDots() {
     const loadingDots = document.querySelector('.loading-dots');
     const dots = [
-        ' ','a', 'al', 'ali', 'alia', 'aliad', 'aliado', 'aliado ', 'aliado d', 'aliado di', 'aliado dig', 'aliado digi', 'aliado digit', 'aliado digita', 'aliado digital',
+        ' ','a', 'al', 'ali', 'alia', 'aliad', 'aliado',
         ' ', ' ', 'e', 'es', 'est', 'estr', 'estra', 'estrat', 'estrate', 'estrateg', 'estratega', ' ', 'o', 'op', 'opc', 'opci', 'opció', 'opción'
     ];
     let index = 0;
